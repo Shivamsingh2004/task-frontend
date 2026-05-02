@@ -1,0 +1,74 @@
+.navbar {
+  background: #ffffff;
+  padding: 0 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  border-bottom: 2px solid #000000;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-brand a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.navbar-links a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 8px 12px;
+  transition: background var(--transition-fast);
+}
+
+.navbar-links a:hover {
+  background: #f1f3f5;
+}
+
+.navbar-user {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-left: 16px;
+  padding-left: 16px;
+  border-left: 1px solid #dee2e6;
+}
+
+.navbar-user span {
+  font-weight: 600;
+}
+
+.user-role {
+  font-size: 0.75rem;
+  padding: 2px 8px;
+  border: 1px solid #000;
+  text-transform: uppercase;
+}
+
+.role-admin { background: #000; color: #fff; }
+.role-member { background: #fff; color: #000; }
+
+.btn-logout {
+  background: #fff;
+  color: #dc3545;
+  border: 1px solid #dc3545;
+}
+
+.btn-logout:hover {
+  background: #dc3545;
+  color: #fff;
+}

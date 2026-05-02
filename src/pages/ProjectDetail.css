@@ -1,0 +1,53 @@
+.project-detail-container {
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pd-header {
+  border-bottom: 2px solid #000;
+  padding-bottom: 24px;
+  margin-bottom: 40px;
+}
+
+.pd-meta {
+  display: flex;
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.pd-section {
+  border: 1px solid #000;
+  padding: 24px;
+  margin-bottom: 32px;
+}
+
+.task-item {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+.task-item.task-completed {
+  background: #f8f9fa;
+  border-color: #eee;
+}
+
+.btn-mark-done {
+  border: 1px solid #000;
+  background: #fff;
+  color: #000;
+  font-size: 0.8rem;
+  padding: 4px 10px;
+}
+
+.btn-mark-done:hover {
+  background: #000;
+  color: #fff;
+}
+
+.member-item {
+  border: 1px solid #eee;
+  padding: 10px;
+  margin-bottom: 8px;
+}
