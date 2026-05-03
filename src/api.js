@@ -1,8 +1,15 @@
 import axios from 'axios';
 
-const baseURL = import.meta.env.VITE_API_URL 
-  ? `${import.meta.env.VITE_API_URL}/api`
-  : '/api';
+let backendUrl = import.meta.env.VITE_API_URL;
+
+if (!backendUrl) {
+  backendUrl = import.meta.env.PROD
+    ? 'https://task-backend-gkwi.onrender.com'
+    : 'http://localhost:10000';
+}
+
+// Ensure we don't duplicate /api if the user already included it in VITE_API_URL
+const baseURL = backendUrl.endsWith('/api') ? backendUrl : `${backendUrl}/api`;
 
 const API = axios.create({
   baseURL,
