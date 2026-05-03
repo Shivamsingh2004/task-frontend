@@ -121,8 +121,9 @@ function ProjectDetail() {
               <h2>STATUS</h2>
               <form onSubmit={handleUpdateStatus} className="inline-form" style={{ display: 'flex', gap: '10px' }}>
                 <select value={status} onChange={(e) => setStatus(e.target.value)} style={{ flex: 1, border: '1px solid #000' }}>
+                  <option value="planning">PLANNING</option>
                   <option value="active">ACTIVE</option>
-                  <option value="on_hold">ON HOLD</option>
+                  <option value="on-hold">ON HOLD</option>
                   <option value="completed">COMPLETED</option>
                 </select>
                 <button type="submit" className="btn-primary" style={{ width: 'auto', padding: '0 20px' }}>UPDATE</button>
